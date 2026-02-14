@@ -232,7 +232,7 @@
         <header>
             <div class="header-info">
                 <h1>朱文彬</h1>
-                <p>游戏开发工程师 (Unity/C#)</p>
+                <p>男 | 游戏开发工程师</p>
             </div>
             <div class="contact-info">
                 <p>电话: <a href="tel:17355383527">17355383527</a></p>
@@ -242,34 +242,33 @@
         </header>
 
         <section>
-            <h2>技能概览</h2>
+            <h2>个人优势</h2>
             <div>
-                <span class="tag">Unity 3D</span>
-                <span class="tag">C#</span>
-                <span class="tag">设计模式</span>
-                <span class="tag">有限状态机 (FSM)</span>
-                <span class="tag">A* 寻路</span>
-                <span class="tag">Luban</span>
-                <span class="tag">Addressables</span>
-                <span class="tag">UGUI</span>
                 <span class="tag">Unity Profiler</span>
+                <span class="tag">Addressables</span>
+                <span class="tag">设计模式</span>
+                <span class="tag">JFramework</span>
+                <span class="tag">GameFramework</span>
+                <span class="tag">QFramework</span>
+                <span class="tag">AI 工具</span>
             </div>
             <p style="margin-top: 15px;">
-                掌握单例、状态机、事件总线、工厂模式等设计模式，熟悉 JFramework、GameFramework、QFramework 等主流框架，具备数据驱动与可扩展架构设计能力。熟练使用 AI 代码工具提升开发效率。
-                熟练使用 Unity Profiler 进行 CPU/GPU/内存/GC 性能分析。
-                熟练使用 Addressables 进行资源管理，结合对象池技术有效减少 GC 压力。
+                熟练使用 Unity Profiler 进行 CPU/GPU/内存/GC 性能分析。<br>
+                熟练使用 Addressables 进行资源管理，结合对象池技术有效减少 GC 压力。<br>
+                掌握单例、状态机、事件总线、工厂模式等设计模式，熟悉 JFramework、GameFramework、QFramework 等主流框架，具备数据驱动与可扩展架构设计能力。<br>
+                熟练使用 AI 代码工具提升开发效率。
             </p>
         </section>
 
         <section>
             <h2>工作经历</h2>
             
-            <!-- 工作经历 1: 异号世界 -->
+            <!-- 工作经历: 秦皇岛熊柴伟略网络科技 -->
             <div class="job-item">
                 <div class="job-header">
-                    <div class="job-company">异号世界</div>
-                    <div class="job-role">游戏程序 & 策划</div>
-                    <div class="job-date">2025.03 - 2025.05</div>
+                    <div class="job-company">秦皇岛熊柴伟略网络科技</div>
+                    <div class="job-role">前端开发工程师</div>
+                    <div class="job-date">2025.10 - 2026.02</div>
                 </div>
                 
                 <div class="job-content">
@@ -277,9 +276,9 @@
                         <li class="content-item">
                             <span class="item-title">1. 核心任务调度与AI行为系统架构</span>
                             <ul class="sub-list">
-                                <li><strong>设计并实现高并发任务管理系统：</strong>构建支持创建、分配、取消、回滚的全生命周期任务管理器 (TaskManager)。设计基于权重优先级（Priority-Weighted）的智能分配算法，综合考量工人偏好、体力状态及空间距离，实现多任务类型（建造/采集/运输/战斗）的高效调度。</li>
+                                <li><strong>设计并实现高并发任务管理系统：</strong>构建支持创建、分配、取消、回滚的全生命周期任务管理器 (TaskManager)。设计基于<strong>权重优先级（Priority-Weighted）</strong>的智能分配算法，综合考量工人偏好、体力状态及空间距离，实现多任务类型（建造/采集/运输/战斗）的高效调度。</li>
                                 <li><strong>开发智能工人行为模块（Agent FSM）：</strong>采用分层有限状态机 (HFSM) 架构实现工人 AI，解耦 MoveTo、Perform、ReturnHome 等原子行为。引入体力与背包系统，实现工人在资源不足或疲劳时的自主决策（如自动中断任务返航、寻找最近仓库卸货）。</li>
-                                <li><strong>集成 A* 寻路方案：</strong>基于 A Pathfinding Project 实现动态避障与平滑移动，优化了 50+ 单位同屏下的寻路性能，解决狭窄通道拥堵问题。</li>
+                                <li><strong>集成 A* 寻路方案：</strong>基于 A Pathfinding* 实现动态避障与平滑移动。</li>
                             </ul>
                         </li>
                         
@@ -287,7 +286,7 @@
                             <span class="item-title">2. 自动化数据管线与剧情系统</span>
                             <ul class="sub-list">
                                 <li><strong>搭建 Luban 数据工作流：</strong>建立 Excel 到 C#/JSON 的全自动化导表管线，实现剧情对话、任务配置、物品属性的数据驱动 (Data-Driven) 开发，显著提升策划配置效率。</li>
-                                <li><strong>实现多分支剧情引擎：</strong>开发 StoryQuestManager，支持非线性叙事与多条件判断（如物品数量/任务计数）。设计对话动作系统 (DialogueAction)，实现在对话过程中动态触发任务接取、好感度变更及区域解锁。</li>
+                                <li><strong>实现多分支剧情：</strong>开发 StoryQuestManager，支持非线性叙事与多条件判断（如物品数量/任务计数）。设计对话动作系统 (DialogueAction)，实现在对话过程中动态触发任务接取、及区域解锁。</li>
                             </ul>
                         </li>
                         
@@ -303,7 +302,7 @@
                             <span class="item-title">4. 战斗塔防与地图探索</span>
                             <ul class="sub-list">
                                 <li><strong>实现混合战斗机制：</strong>开发基于视野检测 (Physics2D) 的索敌与仇恨系统，实现防御塔自动瞄准射击与敌人 AI 的漫游/追击/攻击状态切换。</li>
-                                <li><strong>开发区域迷雾与解锁系统：</strong>设计基于事件驱动的 RegionUnlockService，实现地图区域的黑盒迷雾 (Fog of War) 遮挡与按任务进度解锁功能，并配套开发编辑器工具 (StoryQuestSetupTool) 实现场景遮罩的一键绑定。</li>
+                                <li><strong>开发区域迷雾与解锁系统：</strong>设计基于事件驱动的 RegionUnlockService，实现地图区域的黑盒迷雾 (Fog of War) 遮挡与按任务进度解锁功能。</li>
                             </ul>
                         </li>
                         
@@ -318,18 +317,6 @@
                 </div>
             </div>
 
-            <!-- 工作经历 2: 秦皇岛 -->
-            <div class="job-item">
-                <div class="job-header">
-                    <div class="job-company">秦皇岛熊柴伟略网络科技</div>
-                    <div class="job-role">前端开发工程师</div>
-                    <div class="job-date">2025.10 - 2026.02</div>
-                </div>
-                <div class="job-content">
-                    <p>（简历中未提供详细描述，可在此处补充）</p>
-                </div>
-            </div>
-
         </section>
 
         <section>
@@ -337,13 +324,15 @@
             
             <div class="project-block">
                 <div class="job-header">
-                    <div class="job-company">复合型生存游戏 (Survival Game)</div>
-                    <div class="job-role">核心职责与成果</div>
+                    <div class="job-company">异号世界</div>
+                    <div class="job-role">游戏程序 & 策划</div>
+                    <div class="job-date">2025.03 - 2025.05</div>
                 </div>
                 
                 <p><strong>项目描述：</strong>融合昼夜循环、种田经营与塔防玩法的复合型生存游戏。</p>
                 
                 <div class="project-summary">
+                    <p><strong>核心职责与成果：</strong></p>
                     <ul>
                         <li><strong>架构设计：</strong>采用事件总线+状态机解耦系统模块，提升代码复用率，支持快速迭代。</li>
                         <li><strong>性能优化：</strong>使用 Addressables 实现异步分组加载；实现对象池管理（怪物/特效/子弹）。</li>
@@ -368,7 +357,7 @@
             </div>
             <div class="edu-item">
                 <div class="edu-school">芜湖职业技术学院</div>
-                <div class="edu-major">计算机应用技术 (本科)</div>
+                <div class="edu-major">计算机应用技术</div>
                 <div class="edu-date">2020 - 2022</div>
             </div>
         </section>
