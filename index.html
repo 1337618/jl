@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朱文彬 - 游戏开发工程师简历</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f5f6fa;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5em;
+        }
+
+        .header-info p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9em;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .contact-info p {
+            margin: 2px 0;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        h3 {
+             color: #2c3e50;
+             margin-bottom: 10px;
+             font-size: 1.2em;
+        }
+
+        .job-item, .project-block {
+            margin-bottom: 30px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .job-company {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        
+        .job-role {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        .job-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .content-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .content-item {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .item-title::before {
+            content: "■ ";
+            color: var(--accent-color);
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        .sub-list {
+            list-style-type: none;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        .sub-list li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .sub-list li::before {
+            content: "•";
+            color: #7f8c8d;
+            position: absolute;
+            left: 0;
+        }
+        
+        .project-summary ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .project-summary li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .project-summary li::before {
+             content: "▹";
+             color: var(--accent-color);
+             position: absolute;
+             left: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e1ecf4;
+            color: #2c3e50;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #d1e3f0;
+        }
+        
+        .download-btn {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .job-header, .edu-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-info">
+                <h1>朱文彬</h1>
+                <p>游戏开发工程师 (Unity/C#)</p>
+            </div>
+            <div class="contact-info">
+                <p>电话: <a href="tel:17355383527">17355383527</a></p>
+                <p>邮箱: <a href="mailto:anoobc@163.com">anoobc@163.com</a></p>
+                <p>微信: maca314159</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>技能概览</h2>
+            <div>
+                <span class="tag">Unity 3D</span>
+                <span class="tag">C#</span>
+                <span class="tag">设计模式</span>
+                <span class="tag">有限状态机 (FSM)</span>
+                <span class="tag">A* 寻路</span>
+                <span class="tag">Luban</span>
+                <span class="tag">Addressables</span>
+                <span class="tag">UGUI</span>
+                <span class="tag">Unity Profiler</span>
+            </div>
+            <p style="margin-top: 15px;">
+                掌握单例、状态机、事件总线、工厂模式等设计模式，熟悉 JFramework、GameFramework、QFramework 等主流框架，具备数据驱动与可扩展架构设计能力。熟练使用 AI 代码工具提升开发效率。
+                熟练使用 Unity Profiler 进行 CPU/GPU/内存/GC 性能分析。
+                熟练使用 Addressables 进行资源管理，结合对象池技术有效减少 GC 压力。
+            </p>
+        </section>
+
+        <section>
+            <h2>工作经历</h2>
+            
+            <!-- 工作经历 1: 异号世界 -->
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-company">异号世界</div>
+                    <div class="job-role">游戏程序 & 策划</div>
+                    <div class="job-date">2025.03 - 2025.05</div>
+                </div>
+                
+                <div class="job-content">
+                    <ul class="content-list">
+                        <li class="content-item">
+                            <span class="item-title">1. 核心任务调度与AI行为系统架构</span>
+                            <ul class="sub-list">
+                                <li><strong>设计并实现高并发任务管理系统：</strong>构建支持创建、分配、取消、回滚的全生命周期任务管理器 (TaskManager)。设计基于权重优先级（Priority-Weighted）的智能分配算法，综合考量工人偏好、体力状态及空间距离，实现多任务类型（建造/采集/运输/战斗）的高效调度。</li>
+                                <li><strong>开发智能工人行为模块（Agent FSM）：</strong>采用分层有限状态机 (HFSM) 架构实现工人 AI，解耦 MoveTo、Perform、ReturnHome 等原子行为。引入体力与背包系统，实现工人在资源不足或疲劳时的自主决策（如自动中断任务返航、寻找最近仓库卸货）。</li>
+                                <li><strong>集成 A* 寻路方案：</strong>基于 A Pathfinding Project 实现动态避障与平滑移动，优化了 50+ 单位同屏下的寻路性能，解决狭窄通道拥堵问题。</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="content-item">
+                            <span class="item-title">2. 自动化数据管线与剧情系统</span>
+                            <ul class="sub-list">
+                                <li><strong>搭建 Luban 数据工作流：</strong>建立 Excel 到 C#/JSON 的全自动化导表管线，实现剧情对话、任务配置、物品属性的数据驱动 (Data-Driven) 开发，显著提升策划配置效率。</li>
+                                <li><strong>实现多分支剧情引擎：</strong>开发 StoryQuestManager，支持非线性叙事与多条件判断（如物品数量/任务计数）。设计对话动作系统 (DialogueAction)，实现在对话过程中动态触发任务接取、好感度变更及区域解锁。</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="content-item">
+                            <span class="item-title">3. 模拟经营与生产物流系统</span>
+                            <ul class="sub-list">
+                                <li><strong>构建分阶段建造系统：</strong>设计支持多人协作的建造逻辑，实现基于进度的模型动态切换 (BuildingStage) 与工时叠加算法。</li>
+                                <li><strong>开发自动化物流运输闭环：</strong>实现生产建筑 (ProductionBuilding) 与仓储系统的联动。设计基于阈值触发的运输任务生成机制（如库存 >80% 自动呼叫商队），并实现掉落物 (DropItem) 的自动回收逻辑，确保经济循环闭环。</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="content-item">
+                            <span class="item-title">4. 战斗塔防与地图探索</span>
+                            <ul class="sub-list">
+                                <li><strong>实现混合战斗机制：</strong>开发基于视野检测 (Physics2D) 的索敌与仇恨系统，实现防御塔自动瞄准射击与敌人 AI 的漫游/追击/攻击状态切换。</li>
+                                <li><strong>开发区域迷雾与解锁系统：</strong>设计基于事件驱动的 RegionUnlockService，实现地图区域的黑盒迷雾 (Fog of War) 遮挡与按任务进度解锁功能，并配套开发编辑器工具 (StoryQuestSetupTool) 实现场景遮罩的一键绑定。</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="content-item">
+                            <span class="item-title">5. 性能优化与工具开发</span>
+                            <ul class="sub-list">
+                                <li><strong>编辑器效率工具：</strong>开发 StoryQuestSetupTool 等 Editor 扩展工具，实现场景交互点、任务数据、迷雾遮罩的可视化配置与自动绑定。</li>
+                                <li><strong>资源管理优化：</strong>引入服务定位器模式解耦核心模块，使用对象池技术管理高频生成的投射物与敌人，有效降低 GC 压力。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 工作经历 2: 秦皇岛 -->
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-company">秦皇岛熊柴伟略网络科技</div>
+                    <div class="job-role">前端开发工程师</div>
+                    <div class="job-date">2025.10 - 2026.02</div>
+                </div>
+                <div class="job-content">
+                    <p>（简历中未提供详细描述，可在此处补充）</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>项目经历</h2>
+            
+            <div class="project-block">
+                <div class="job-header">
+                    <div class="job-company">复合型生存游戏 (Survival Game)</div>
+                    <div class="job-role">核心职责与成果</div>
+                </div>
+                
+                <p><strong>项目描述：</strong>融合昼夜循环、种田经营与塔防玩法的复合型生存游戏。</p>
+                
+                <div class="project-summary">
+                    <ul>
+                        <li><strong>架构设计：</strong>采用事件总线+状态机解耦系统模块，提升代码复用率，支持快速迭代。</li>
+                        <li><strong>性能优化：</strong>使用 Addressables 实现异步分组加载；实现对象池管理（怪物/特效/子弹）。</li>
+                        <li><strong>核心系统开发：</strong>设计基于 ScriptableObject 驱动的配置化技能系统，支持多段伤害/Buff 叠加，策划零代码配置技能参数。</li>
+                        <li><strong>背包与物品合成系统：</strong>设计可扩展的配方数据结构，支持动态添加合成配方，玩家可通过收集材料合成武器、药水等道具。</li>
+                        <li><strong>美术与表现优化：</strong>集成 Spine 2D 骨骼动画，实现角色、怪物的流畅动作表现与状态切换；使用 UGUI 搭建动态 UI 系统，支持昼夜模式切换与背包界面动画反馈；使用 Timeline 制作剧情动画和剧情对话。</li>
+                    </ul>
+                </div>
+                
+                <p style="margin-top: 10px;">
+                    <strong>项目链接：</strong> <a href="https://www.gcores.com/games/148172" target="_blank">https://www.gcores.com/games/148172</a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>教育经历</h2>
+            <div class="edu-item">
+                <div class="edu-school">安徽财经大学</div>
+                <div class="edu-major">计算机科学与技术 (本科)</div>
+                <div class="edu-date">2023 - 2025</div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-school">芜湖职业技术学院</div>
+                <div class="edu-major">计算机应用技术 (专科)</div>
+                <div class="edu-date">2020 - 2022</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>荣誉奖项</h2>
+            <ul>
+                <li>全国大学生计算机设计大赛安徽省优胜奖</li>
+            </ul>
+        </section>
+        
+        <a href="ZhuWenbin_Resume.docx" class="download-btn" download>下载 Word 简历</a>
+    </div>
+</body>
+</html>
